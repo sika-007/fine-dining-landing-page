@@ -1,6 +1,7 @@
 import React from 'react'
 import { AboutUs, Chef, FindUs, Footer, Gallery, Header, Intro, Laurels, Menu } from './containers'
 import { Navbar } from './components'
+import "./app.css"
 
 const App = () => {
   return (
@@ -8,6 +9,7 @@ const App = () => {
       <Navbar />
       <Header />
       <AboutUs />
+      <Menu />
       <Chef />
       <Intro />
       <Laurels />
