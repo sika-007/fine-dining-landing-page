@@ -19,6 +19,7 @@ import overlaybg from "../assets/overlaybg.png"
 import quote from "../assets/quote.png"
 import sign from "../assets/sign.png"
 import spoon from "../assets/spoon.png"
+import welcome from "../assets/welcome.png"
 
 export default {
     award01,
@@ -41,5 +42,6 @@ export default {
     overlaybg,
     quote,
     sign,
-    spoon
+    spoon,
+    welcome
 }
