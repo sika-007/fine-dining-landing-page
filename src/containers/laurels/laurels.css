@@ -1,0 +1,111 @@
+.app__laurels.app__wrapper {
+    padding: 10rem 6rem;
+    position: relative;
+    justify-content: center;
+    gap: 5.5rem;
+}
+
+.app__laurels-logo {
+    position: absolute;
+    top: 45px;
+    left: 57px;
+    width: 100px;
+}
+
+.app__laurels-logo img {
+    width: 100%;
+}
+
+.app__laurels-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.app__laurels-content_heading {
+    margin-bottom: 4rem;
+}
+
+.app__laurels-content_heading h1 {
+    font-weight: 400;
+}
+
+.app__laurels-content_awards {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-gap: 2rem;
+}
+
+.app__laurels-image {
+    width: 555px;
+    flex-shrink: 0.5;
+}
+
+.app__laurels-image img {
+    width: 100%;
+}
+
+@media screen and (max-width: 1300px) {
+    .app__laurels.app__wrapper {
+        flex-direction: column;
+    }
+
+    .app__laurels-logo {
+        left: unset;
+        right: 57px;
+    }
+
+    .app__laurels-content {
+        align-self: start;
+    }
+
+    .app__laurels-image {
+        align-self: flex-end;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .app__laurels-content {
+        align-self: center;
+    }
+
+    .app__laurels-image {
+        align-self: center;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .app__laurels.section__padding {
+        padding: 4rem;
+    }
+
+    .app__laurels-content {
+        width: 100%;
+    }
+
+    .app__laurels-content_awards {
+        grid-template-columns: 1fr;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .app__laurels.section__padding.app__wrapper {
+        gap: 3rem;
+        padding: 4rem 2rem;
+    }
+
+    .app__laurels-logo {
+        top: 20px;
+        right: 25px;
+        width: 60px;
+    }
+
+    .app__laurels-content_heading {
+        margin-bottom: 2rem;
+    }
+
+    .app__laurels-image {
+        width: 300px;
+    }
+}
