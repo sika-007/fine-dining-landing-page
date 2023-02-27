@@ -1,0 +1,15 @@
+.app__video {
+    width: 100%;
+    position: relative;
+}
+
+.app__video video {
+    width: 100%;
+    display: block;
+}
+
+.app__video-overlay.flex__center {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.35);
+    inset: 0;
+}
