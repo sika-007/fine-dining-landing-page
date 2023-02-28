@@ -1,0 +1,83 @@
+.app__findus {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.app__findus-content_heading {
+    margin-bottom: 3rem;
+}
+
+.app__findus-content_info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.app__findus-content_info-address p {
+    color: var(--color-grey);
+}
+
+.app__findus-content_info-opening {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.app__findus-content_info-opening .p__cormorant {
+    color: var(--color-golden);
+}
+
+.app__findus-image {
+    width: 550px;
+}
+
+.app__findus-image img {
+    width: 100%;
+}
+
+@media screen and (max-width: 950px) {
+    .app__findus {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .app__findus-content {
+        align-self: flex-start;
+    }
+
+    .app__findus-content_heading {
+        margin-bottom: 1rem;
+    }
+
+    .app__findus-content_info {
+        gap: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .app__findus-content_info-opening {
+        gap: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .app__findus {
+        gap: 2rem;
+    }
+
+    .app__findus-content_heading {
+        margin-bottom: unset;
+    }
+
+    .app__findus-content_info-opening {
+        gap: unset;
+    }
+
+    .app__findus-image {
+        width: 100%;
+        max-width: 400px;
+    }
+}
