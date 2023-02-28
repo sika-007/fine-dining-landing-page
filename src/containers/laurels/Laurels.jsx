@@ -16,11 +16,11 @@ const Laurels = () => {
   ))
 
   return (
-    <div className="app__laurels app__bg app__wrapper section__padding" id='awards'>
+    <div className="app__laurels app__bg app__wrapper section__padding">
       <div className="app__laurels-logo">
         <img src={images.logo} alt="logo" />
       </div>
-      <div className="app__laurels-content">
+      <div className="app__laurels-content" id='awards'>
         <div className="app__laurels-content_heading">
           <SubHeading title="Awards & recognition"/>
           <h1 className="headtext__cormorant">Our Laurels</h1>
