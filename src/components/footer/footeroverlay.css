@@ -1,0 +1,95 @@
+.app__footer-overlay_content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: start;
+    margin-bottom: 4.5rem;
+}
+
+.app__footer-overlay_content_contact, .app__footer-overlay_content_workhours {
+    margin-top: 2rem;
+    max-width: 250px;
+}
+
+.app__footer-overlay_content_contact, .app__footer-overlay_content_workhours, .app__footer-overlay_content_gericht {
+    text-align: center;
+}
+
+.app__footer-overlay_content_contact-heading p, .app__footer-overlay_content_workhours-heading p{
+    font-weight: 400;
+    color: #F5EFDB;
+    font-size: 2rem;
+    line-height: 40px;
+}
+
+.app__footer-overlay_content_contact-text, .app__footer-overlay_content_workhours-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.app__footer-overlay_content_contact-text p, .app__footer-overlay_content_workhours-text p {
+    color: var(--color-grey);
+}
+
+.app__footer-overlay_content_gericht-content p {
+    color: var(--color-grey);
+}
+
+.app__footer-overlay_content_gericht-content img {
+    margin-top: 1rem;
+    margin-bottom: 1.1rem;
+}
+
+.app__footer-overlay_content_gericht-content-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+}
+
+.social-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.app__footer-overlay_text {
+    text-align: center;
+}
+
+.app__footer-overlay_text p {
+    color: var(--color-grey)
+}
+
+p.p__opensans {
+    text-transform: unset;
+}
+
+@media screen and (max-width: 1050px) {
+    .app__footer-overlay_content {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2rem;
+    }
+
+    .app__footer-overlay_content_gericht {
+        max-width: 450px;
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .app__footer-overlay_content {
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+        justify-items: start;
+    }
+
+    .app__footer-overlay_content_contact, .app__footer-overlay_content_gericht, .app__footer-overlay_content_workhours {
+        text-align: start;
+    }
+
+    .app__footer-overlay_content_gericht {
+        grid-column: 1/2;
+    }
+}
+
